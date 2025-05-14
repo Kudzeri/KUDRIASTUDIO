@@ -113,7 +113,10 @@
 </header>
 <aside>
     <div class="logo">
-        <img src="{{ asset('img/logo.svg')}}" alt=""/>
+        <img src="{{ asset('img/logo.svg')}}" srcset="
+        {{ asset('img/logo.svg') }} 1x,
+    {{ asset('img/logo.png') }} 2x
+    " alt=""/>
     </div>
 </aside>
 <main>
