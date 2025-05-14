@@ -59,7 +59,10 @@
 
     <nav class="navbar">
         <a href="#" class="nav-logo">
-            <img src="{{ asset('img/logo-mobile.svg')}}" alt=""/>
+            <img src="{{ asset('img/logo-mobile.svg')}}" srcset="
+    {{ asset('img/logo-mobile.svg') }} 1x,
+    {{ asset('img/logo-mobile.png') }} 2x
+  " alt=""/>
         </a>
         <ul class="nav-menu">
             <li class="nav-item">
